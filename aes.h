@@ -47,19 +47,19 @@
 // parameters for AES_K_128
 #if defined(AES_K_128) && (AES_K_128==1)
     #define AES_KEY_LENGTH 128/8 //16 Bytes key
-    #define AES_EXPANDED_KEY 176 //176 bytes
-    #define AES_ROUNDS 10 //14 rounds for 256 bits key
+    #define AES_EXPANDED_KEY 176 //176 bytes expanded key
+    #define AES_ROUNDS 10 //10 rounds for 128 bits key
 
 // parameters for AES_K_192
 #elif defined(AES_K_192) && (AES_K_192==1)
     #define AES_KEY_LENGTH 192/8 //24 Bytes key
-    #define AES_EXPANDED_KEY 208 //208 bytes
+    #define AES_EXPANDED_KEY 208 //208 bytes expanded key
     #define AES_ROUNDS 12 //12 rounds for 192 bits key
 
 // parameters for AES_K_256
 #else
     #define AES_KEY_LENGTH 256/8 //32 Bytes key
-    #define AES_EXPANDED_KEY 240 //240 bytes
+    #define AES_EXPANDED_KEY 240 //240 bytes expanded key
     #define AES_ROUNDS 14 //14 rounds for 256 bits key
 #endif
 
