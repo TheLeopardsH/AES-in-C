@@ -64,3 +64,8 @@
 #endif
 
 
+ // AES_ctx AES context to be initialized
+struct AES_ctx
+{
+	
+};
